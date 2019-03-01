@@ -10,7 +10,7 @@ intron=dna[63:91]
 dna_coding_per=(len(exon1)+len(exon2))/((len(exon1)+len(exon2))+len(intron))
 dna_coding=exon1+exon2
 dna_noncoding=intron
-my_file=open("out_file.txt","w")
+my_file=open("out_genomic_dna.txt","w")
 my_file.write(dna_coding)
 my_file.write("\n")
 my_file.write(dna_noncoding)
