@@ -9,7 +9,8 @@ ATCGACTGATCGATCGTACGAT
 """
 my_file=open("out_fasta.txt","w")
 seq1_header=">sequence_one"
-seq1_seq="ATCGATCGATCGATCGAT"
+seq1_seq="ATCGATCGATCGATCGNNNNNNNAT"
+seq1_seq=seq1_seq.replace("N","")
 my_file.write(seq1_header)
 my_file.write("\n")
 my_file.write(seq1_seq.upper())
